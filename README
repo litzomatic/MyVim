@@ -1,2 +1,11 @@
-Will put my vim settings etc. here.
+Will ut my vim settings etc. here.
 
+http://drchip.0sites.net/astronaut/vim/index.html#HILINKS
+:HLT
+:verbose hi cursorline
+Help figure out your highlighting quickly.
+
+git config --global diff.tool vimdiff
+
+TODO make vimdiff highlighting better.
+	 	 	 a
