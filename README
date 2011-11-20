@@ -8,4 +8,3 @@ Help figure out your highlighting quickly.
 git config --global diff.tool vimdiff
 
 TODO make vimdiff highlighting better.
-	 	 	 a
