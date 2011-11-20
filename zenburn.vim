@@ -340,7 +340,7 @@ if &t_Co > 255
         hi diffadd         ctermbg=237
         hi diffdelete      ctermbg=238
         hi difftext        ctermbg=237
-        hi errormsg        ctermbg=237
+        "hi errormsg        ctermbg=237
         "hi incsearch       ctermbg=228
         hi linenr          ctermbg=235
         "hi Search          ctermbg=238
