@@ -47,5 +47,7 @@ TODO Section
 Make vimdiff highlighting better.
 Change traceback highlighting in iPython.
 Add mapping tab to ctrl-x ctrl-u
-Python CTag Like Highlighting
+Find Python CTag Like Highlighting or get CTag highlighting working again
+improve ipy.vim pull in changes from most recent
 More modules...
+Upgrade to dev version of iPython. (maybe)
