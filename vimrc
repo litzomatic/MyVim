@@ -20,6 +20,9 @@ set cursorline
 "set cursorcolumn
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
+" Creates a view, what els does this do besides
+" support manual folding and return your cursor
+" to the position it was in before closing?
 " http://vim.wikia.com/wiki/Make_views_automatic
 set viewoptions-=options
 augroup vimrc
@@ -33,17 +36,24 @@ augroup vimrc
     \|  endif
 augroup END
 
+"http://stackoverflow.com/questions/357785/what-is-the-recommended-way-to-use-vim-folding-for-python-coding
+:set foldmethod=indent
+nnoremap <space> zO
+
+vnoremap <space> zC
+
+
 "Old stuff
 set nocompatible
 set shiftwidth=4
 set tabstop=4
-"set expandtab
+set expandtab
 set autoindent
 set number
 set smarttab
 set numberwidth=1
 "loadview
-autocmd BufWinEnter *.* silent loadview
+"autocmd BufWinEnter *.* silent loadview
 syntax enable
 "for zenburn
 set t_Co=256
