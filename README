@@ -42,3 +42,4 @@ TODO Section
 
 Make vimdiff highlighting better.
 Change traceback highlighting in iPython.
+Add mapping tab to ctrl-x ctrl-u

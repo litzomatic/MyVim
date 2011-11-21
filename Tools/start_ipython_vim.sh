@@ -32,6 +32,6 @@ while True:
 
 endpython
 
-vim -c 'source /Users/litzomatic/Downloads/ipy_vim/ipy.vim' -c 'python with open("server_info.txt", "r") as f: x = \
+vim -c 'source ../iPython_Vim_Integration/ipy.vim' -c 'python with open("server_info.txt", "r") as f: x = \
 [line for line in f]; x = x[1][14:]; vim.command("IPython %s" % x[:-1]); print("IPython %s" % x[:-1])'
 
