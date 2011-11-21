@@ -42,6 +42,8 @@ feature at the moment. Others will be brought in as time permits.
 start_ipython_vim.sh starts and connects vim to iPython in a single command.
 Note: This will need to be updated for iPython .12
 
+6. Install SuperTab http://www.vim.org/scripts/script.php?script_id=1643
+
 TODO Section
 
 Make vimdiff highlighting better.
@@ -49,5 +51,7 @@ Change traceback highlighting in iPython.
 Add mapping tab to ctrl-x ctrl-u
 Find Python CTag Like Highlighting or get CTag highlighting working again
 improve ipy.vim pull in changes from most recent
-More modules...
+More vim plugins...
 Upgrade to dev version of iPython. (maybe)
+It would be nice if cursorline was the highest priority. In this way the line your editing
+won't constantly have ErrorMsg highlighting as your typing.
