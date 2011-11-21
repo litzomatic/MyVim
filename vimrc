@@ -6,17 +6,18 @@
 call pathogen#infect()
 "Whitespace matters!
 "Show mixed leading whitespace (bad)
-:highlight MixedWhiteSpace ctermbg=darkgreen guibg=darkgreen
-:autocmd ColorScheme * highlight MixedWhiteSpace ctermbg=darkgreen guibg=darkgreen
-:let w:MixedWhiteSpaceM1=matchadd('MixedWhiteSpace', '^\%( \+\t\+\|\t\+ \+\)', -1)
+":highlight MixedWhiteSpace ctermbg=darkgreen guibg=darkgreen
+":autocmd ColorScheme * highlight MixedWhiteSpace ctermbg=darkgreen guibg=darkgreen
+:let w:MixedWhiteSpaceM1=matchadd('ErrorMsg', '^\%( \+\t\+\|\t\+ \+\)\s\+', -1)
 ":match MixedWhiteSpace /^\%( \+\t\+\|\t\+ \+\)/
-:highlight TrailingWhiteSpace ctermbg=darkgreen guibg=darkgreen
-:autocmd ColorScheme * highlight TrailingWhiteSpace ctermbg=darkgreen guibg=darkgreen
-:let w:TrailingWhiteSpaceM1=matchadd('TrailingWhiteSpace', '\s\+$', -1)
+":highlight TrailingWhiteSpace ctermbg=darkgreen guibg=darkgreen
+":autocmd ColorScheme * highlight TrailingWhiteSpace ctermbg=darkgreen guibg=darkgreen
+:let w:TrailingWhiteSpaceM1=matchadd('ErrorMsg', '\s\+$', -1)
 ":match TrailingWhiteSpace /\s\+$/
 "Zenburn mod
 "hi Search          ctermfg=255 cterm=bold
 "hi CursorLine      ctermbg=232
+:let w:LineToLong=matchadd('ErrorMsg', '\%>120v.\+', -1)
 
 "New Stuff
 set hlsearch
