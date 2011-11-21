@@ -20,6 +20,19 @@ set cursorline
 "set cursorcolumn
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
+" http://vim.wikia.com/wiki/Make_views_automatic
+set viewoptions-=options
+augroup vimrc
+    autocmd BufWritePost *
+    \   if expand('%') != '' && &buftype !~ 'nofile'
+    \|      mkview
+    \|  endif
+    autocmd BufRead *
+    \   if expand('%') != '' && &buftype !~ 'nofile'
+    \|      silent loadview
+    \|  endif
+augroup END
+
 "Old stuff
 set nocompatible
 set shiftwidth=4
