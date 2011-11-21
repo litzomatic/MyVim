@@ -22,7 +22,8 @@ git difftool
 
 Pygment style is zenburn.py
 
-On my mac the path to the directory to place zenburn.py is /opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pygments/styles.
+On my mac the path to the directory to place zenburn.py is:
+/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pygments/styles.
 
 I hacked the following line so my pygments would load.  In upstream versions of iPython this is not necessary.
 
@@ -32,14 +33,19 @@ Use grep -n -r linux . to find the line for yourself.
 
 Starting ipython
 
-ipython-2.7 qtconsole --editor=vim --colors=linux --stylesheet=zenburn_ipython.css 
+ipython-2.7 qtconsole --editor=vim --colors=linux --stylesheet=zenburn_ipython.css
 
 5. iPython vim code completion and perhaps other niceties.
 
-
+ipy.vim contains the logic, mostly some fixes for the tab completion, which is the most important
+feature at the moment. Others will be brought in as time permits.
+start_ipython_vim.sh starts and connects vim to iPython in a single command.
+Note: This will need to be updated for iPython .12
 
 TODO Section
 
 Make vimdiff highlighting better.
 Change traceback highlighting in iPython.
 Add mapping tab to ctrl-x ctrl-u
+Python CTag Like Highlighting
+More modules...

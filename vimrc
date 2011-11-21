@@ -18,6 +18,7 @@ call pathogen#infect()
 set hlsearch
 set cursorline
 "set cursorcolumn
+let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
 "Old stuff
 set nocompatible
