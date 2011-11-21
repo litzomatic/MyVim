@@ -55,3 +55,4 @@ More vim plugins...
 Upgrade to dev version of iPython. (maybe)
 It would be nice if cursorline was the highest priority. In this way the line your editing
 won't constantly have ErrorMsg highlighting as your typing.
+Autofold Python Code
