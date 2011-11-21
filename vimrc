@@ -5,7 +5,7 @@
 "let g:zenburn_enable_TagHighlight = 1
 call pathogen#infect()
 "Whitespace matters!
-:let w:MixedWhiteSpaceM1=matchadd('ErrorMsg', '^\%( \+\t\+\|\t\+ \+\)\s\+', -1)
+:let w:MixedWhiteSpaceM1=matchadd('ErrorMsg', '^\%( \+\t\+\|\t\+ \+\)\s*', -1)
 :let w:TrailingWhiteSpaceM1=matchadd('ErrorMsg', '\s\+$', -1)
 :let w:LineToLong=matchadd('ErrorMsg', '\%>120v.\+', -1)
 
