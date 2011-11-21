@@ -15,10 +15,8 @@ fi
 
 python << endpython
 
-import time
 import os
 import re
-current_time = time.time()
 
 while True:
 	if os.path.exists('./server_info.txt'):
