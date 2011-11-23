@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo $1
+
 if [ -f server_info.txt ]; then
     echo "Would you like to use the existing file? (y/n)"
 	read yes_or_no
@@ -32,6 +34,12 @@ while True:
 
 endpython
 
+dir=`dirname $1`
+base=`basename $1`
+echo $base
+
 vim -c 'source ../iPython_Vim_Integration/ipy.vim' -c 'python with open("server_info.txt", "r") as f: x = \
-[line for line in f]; x = x[1][14:]; vim.command("IPython %s" % x[:-1]); print("IPython %s" % x[:-1])'
+[line for line in f]; x = x[1][14:]; vim.command("IPython %s" % x[:-1]); print("IPython %s" % x[:-1])' \
+-c "cd! $dir" -c "e $base"
+
 

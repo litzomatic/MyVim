@@ -36,11 +36,14 @@ augroup vimrc
     \|  endif
 augroup END
 
-"http://stackoverflow.com/questions/357785/what-is-the-recommended-way-to-use-vim-folding-for-python-coding
+" http://stackoverflow.com/questions/357785/what-is-the-recommended-way-to-use-vim-folding-for-python-coding
 :set foldmethod=indent
 nnoremap <space> zO
 
 vnoremap <space> zC
+
+" http://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting
+nnoremap <esc> :set invhlsearch<return><esc>
 
 
 "Old stuff
