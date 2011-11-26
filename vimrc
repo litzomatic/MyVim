@@ -5,14 +5,14 @@
 "let g:zenburn_enable_TagHighlight = 1
 call pathogen#infect()
 "Whitespace matters!
-:let w:MixedWhiteSpaceM1=matchadd('ErrorMsg', '^\%( \+\t\+\|\t\+ \+\)\s*', -1)
-:let w:TrailingWhiteSpaceM1=matchadd('ErrorMsg', '\s\+$', -1)
-:let w:LineToLong=matchadd('ErrorMsg', '\%>120v.\+', -1)
+let w:MixedWhiteSpaceM1=matchadd('ErrorMsg', '^\%( \+\t\+\|\t\+ \+\)\s*', -1)
+let w:TrailingWhiteSpaceM1=matchadd('ErrorMsg', '\s\+$', -1)
+let w:LineToLong=matchadd('ErrorMsg', '\%>120v.\+', -1)
 
 "Zenburn mod attempting to keep track of what I change. This may be futile.
 "May be more useful just to do a diff :)
-"hi Search          ctermfg=255 cterm=bold
-"hi CursorLine      ctermbg=232
+" hi Search          ctermfg=255 cterm=bold
+" hi CursorLine      ctermbg=232
 
 "New Stuff
 set hlsearch
@@ -37,14 +37,15 @@ augroup vimrc
 augroup END
 
 " http://stackoverflow.com/questions/357785/what-is-the-recommended-way-to-use-vim-folding-for-python-coding
-:set foldmethod=indent
-nnoremap <space> zO
-
-vnoremap <space> zC
+set foldmethod=indent
+set foldnestmax=2
+nnoremap <space> za
+nnoremap <S-space> zA
+" vnoremap <space> zC
+" vnoremap <space> zC
 
 " http://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting
-nnoremap <esc> :set invhlsearch<return><esc>
-
+noremap <C-h> :set invhlsearch<return>
 
 "Old stuff
 set nocompatible
@@ -62,9 +63,7 @@ syntax enable
 set t_Co=256
 colorscheme zenburn
 
- " colorscheme desert
-
-filetype plugin on
-let g:BASH_AuthorName = 'Derek Litz'
-let g:BASH_Email = 'litzomatic@gmail.com'
-let g:BASH_Company = 'Litzomatic'
+" filetype plugin on
+" let g:BASH_AuthorName = 'Derek Litz'
+" let g:BASH_Email = 'litzomatic@gmail.com'
+" let g:BASH_Company = 'Litzomatic'
