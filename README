@@ -46,6 +46,10 @@ Note: This will need to be updated for iPython .12
 
 DO Section
 
+I need the rest of the the stuff that is in my vim directory
+Get largefile working at home
+Prepare this for my linux box
+
 Make vimdiff highlighting better.
 Change traceback highlighting in iPython.
 Add mapping tab to ctrl-x ctrl-u
@@ -56,4 +60,6 @@ Upgrade to dev version of iPython. (maybe)
 It would be nice if cursorline was the highest priority. In this way the line your editing
 won't constantly have ErrorMsg highlighting as your typing.
 Autofold Python Code
+Set up for JSP and Java code
+
 

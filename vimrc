@@ -6,10 +6,16 @@
 
 call pathogen#infect()
 
+"apt highlighting (maven documentation)
+au! BufRead,BufNewFile *.apt  setf doxiaapt 
+
+"for use with LargeFile.vim
+let g:LargeFile=10
+
 "Whitespace matters!
 let w:MixedWhiteSpaceM1=matchadd('ErrorMsg', '^\%( \+\t\+\|\t\+ \+\)\s*', -1)
 let w:TrailingWhiteSpaceM1=matchadd('ErrorMsg', '\s\+$', -1)
-let w:LineToLong=matchadd('ErrorMsg', '\%>120v.\+', -1)
+let w:LineToLong=matchadd('ErrorMsg', '\%>79v.\+', -1)
 
 "Zenburn mod attempting to keep track of what I change. This may be futile.
 "May be more useful just to do a diff :)
