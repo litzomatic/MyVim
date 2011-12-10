@@ -46,6 +46,10 @@ Note: This will need to be updated for iPython .12
 
 TODO Section
 
+I need the rest of the the stuff that is in my vim directory
+Get largefile working at home
+Prepare this for my linux box
+
 Make vimdiff highlighting better.
 Change traceback highlighting in iPython.
 Add mapping tab to ctrl-x ctrl-u
@@ -64,5 +68,6 @@ CoffeeScript
 The CoffeeScript compiler is itself written in CoffeeScript, using the Jison parser generator. The command-line version of coffee is available as a Node.js utility. The core compiler however, does not depend on Node, and can be run in any JavaScript environment, or in the browser (see "Try CoffeeScript", above).
 
 To install, first make sure you have a working copy of the latest stable version of Node.js, and npm (the Node Package Manager). You can then install CoffeeScript with npm: 
+Set up for JSP and Java code
 
 
