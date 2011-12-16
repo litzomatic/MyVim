@@ -61,5 +61,5 @@ It would be nice if cursorline was the highest priority. In this way the line yo
 won't constantly have ErrorMsg highlighting as your typing.
 Autofold Python Code
 Set up for JSP and Java code
-
+Check out the vim plugins netrw and elinks
 
