@@ -44,7 +44,7 @@ Note: This will need to be updated for iPython .12
 
 6. Install SuperTab http://www.vim.org/scripts/script.php?script_id=1643
 
-DO Section
+TODO Section
 
 I need the rest of the the stuff that is in my vim directory
 Get largefile working at home
@@ -60,6 +60,14 @@ Upgrade to dev version of iPython. (maybe)
 It would be nice if cursorline was the highest priority. In this way the line your editing
 won't constantly have ErrorMsg highlighting as your typing.
 Autofold Python Code
+Add highlighting of preceding spaces that are not multiples of 4
+Zen Coding
+Sass or Less? https://gist.github.com/674726
+Sass + Compass + 960 + adapt.js + 960 gridder?
+CoffeeScript
+The CoffeeScript compiler is itself written in CoffeeScript, using the Jison parser generator. The command-line version of coffee is available as a Node.js utility. The core compiler however, does not depend on Node, and can be run in any JavaScript environment, or in the browser (see "Try CoffeeScript", above).
+
+To install, first make sure you have a working copy of the latest stable version of Node.js, and npm (the Node Package Manager). You can then install CoffeeScript with npm: 
 Set up for JSP and Java code
 Check out the vim plugins netrw and elinks
 

@@ -33,7 +33,7 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 if has("autocmd")
    autocmd FileType python
          \ setlocal comments+=:#:
-         endif "has("autocmd") 
+         endif "has("autocmd")
 
 " Creates a view, what els does this do besides
 " support manual folding and return your cursor
@@ -55,9 +55,9 @@ augroup END
 " http://stackoverflow.com/questions/357785/what-is-the-recommended-way-to-use-vim-folding-for-python-coding
 set foldmethod=indent
 set foldnestmax=2
-nnoremap <space> za
+" nnoremap <space> za
 vnoremap <space> zf
-nnoremap <S-space> zA
+nnoremap <space> zA
 " vnoremap <space> zC
 " vnoremap <space> zC
 
